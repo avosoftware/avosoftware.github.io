@@ -1,0 +1,35 @@
+title: Avo Software
+email: kamil.dybicz@avosoftware.net
+description: it's where your ideas meet our passion
+
+github_username: kdybicz
+linkedin_username: kamildybicz
+
+timezone: "Europe/Warsaw"
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "default"
+
+# plugins:
+#   - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - CHANGELOG.md
+  - CNAME
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Makefile
+  - README.md
