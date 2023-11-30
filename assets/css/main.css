@@ -2,15 +2,12 @@
 
 :root {
   --av-accent-color: #0d6efd;
-  
-  --av-banner-text-color: rgb(248, 249, 250);
-  --av-banner-background-color: rgb(0, 102, 191);
-
-  --av-text-color: #212529;
-
   --av-background-color: #fff;
+  --av-text-color: #212529;
+  
+  --av-banner-background-color: #0066bf;
+  --av-banner-text-color: #f8f9fa;
 }
-
 
 /* https://www.youtube.com/watch?v=345V2MU3E_w */
 img {
@@ -100,9 +97,7 @@ body {
 
 .partner {
   display: grid;
-  grid-template-areas:
-    "logo lead"
-    "logo skills";
+  grid-template-areas: "logo lead" "logo skills";
   grid-template-columns: minmax(100px, 300px) auto;
   gap: 2rem;
 
