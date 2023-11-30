@@ -3,47 +3,34 @@ title: Avo Software
 permalink: /
 ---
 
-<section class="pt-5 pb-1 mt-0 align-items-center d-flex banner">
-  <div class="page-title">
-    <h1 class="display-1 text-light mb-2 mt-5 bounceInDown" style="opacity: 1">
-      <strong>{{ site.title }}</strong>
-    </h1>
-    <p class="lead text-light mb-5 bounceInRight">{{ site.description }}</p>
-  </div>
-</section>
 
-<section class="pt-5 pb-1">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col col-md-8 text-center">
-        <h1>Partners</h1>
-      </div>
-    </div>
+<header class="banner">
+  <div class="title-wrapper">
+    <h1 class="site-title slide-in-down">{{ site.title }}</h1>
+    <h2 class="site-description slide-in-left">{{ site.description }}</h2>
   </div>
-</section>
+</header>
 
-<main class="partners-grid">
-  <article class="partner">
-    <div class="row align-items-center">
-      <div class="col-md-4 col-12 mb-3">
-        <a href="https://www.secretescapes.com/current-sales" target="_blank">
-          <img
-            src="/assets/images/clients/secret-escapes.webp"
-            alt="Secret Escapes"
-            width="300"
-            height="67"
-            class="img-fluid mx-auto d-block"
-          />
-        </a>
-      </div>
-      <div class="col-md-8 col-12 mb-3">
+<div class="wrapper">
+
+  <section class="section">
+    <h2 class="section-title">Partners</h2>
+
+    <ul class="partner-list">
+      <li class="partner">
+        <div class="logo">
+          <a href="https://www.secretescapes.com/current-sales" target="_blank">
+            <img src="/assets/images/clients/secret-escapes.webp" alt="Secret Escapes" 
+            />
+          </a>
+        </div>
         <p class="lead">
           It's an e-commerce portal providing exclusive rates for luxury hotels
           and holidays in the UK and abroad. Good knowledge about social media,
           tracking and understanding users' behaviors, development and
           maintenance of heavily loaded website as keys to success.
         </p>
-        <ul class="list-features lead list-l">
+        <ul class="skills">
           <li>Languages: Groovy, JS, Less</li>
           <li>Technologies: Grails, KnockoutJS, JQuery, Spock</li>
           <li>Databases: MySQL, MongoDB</li>
@@ -52,31 +39,21 @@ permalink: /
             Twitter, Google+), Jira
           </li>
         </ul>
-      </div>
-    </div>
-  </article>
+      </li>
 
-  <article class="partner">
-    <div class="row align-items-center">
-      <div class="col-md-4 col-12 mb-3">
-        <a href="https://www.sentenial.com/en" target="_blank">
-          <img
-            src="/assets/images/clients/sentenial.webp"
-            alt="Sentenial"
-            width="300"
-            height="74"
-            class="img-fluid mx-auto d-block"
-          />
-        </a>
-      </div>
-      <div class="col-md-8 col-12 mb-3">
+      <li class="partner">
+        <div class="logo">
+          <a href="https://www.sentenial.com/en" target="_blank">
+            <img src="/assets/images/clients/sentenial.webp" alt="Sentenial" width="300" height="74"/>
+          </a>
+        </div>
         <p class="lead">
           Development and maintenance of a existing SEPA Payments batch
           processing engine for handling very large XML files in inter-bank
           exchange as well as supported the development of a UI application for
           the end users.
         </p>
-        <ul class="list-features lead list-l">
+        <ul class="skills">
           <li>Languages: J2EE 5</li>
           <li>
             Technologies: Spring 2/3, Hibernate 3.x, Struts 1, ION, Selenium,
@@ -87,80 +64,45 @@ permalink: /
             Other: JBOSS AS 4, XML, JSP, maven, SVN, Jenkins, Jira, Jabber
           </li>
         </ul>
-      </div>
-    </div>
-  </article>
+      </li>
 
-  <article class="partner">
-    <div class="row align-items-center">
-      <div class="col-md-4 col-12 mb-3">
-        <a href="https://www.unizeto.pl/" target="_blank">
-          <img
-            src="/assets/images/clients/unizeto-technologies.webp"
-            alt="Unizeto Technologies"
-            width="300"
-            height="74"
-            class="img-fluid mx-auto d-block"
-          />
-        </a>
-      </div>
-      <div class="col-md-8 col-12 mb-3">
+      <li class="partner">
+        <div class="logo">
+          <a href="https://www.unizeto.pl/" target="_blank">
+            <img src="/assets/images/clients/unizeto-technologies.webp" alt="Unizeto Technologies" width="300" height="74"/>
+          </a>
+        </div>
         <p class="lead">
           All kinds of PKI solutions developed for Java SE, J2EE, Java applets
           and Android devices.
         </p>
-        <ul class="list-features lead list-l">
+        <ul class="skills">
           <li>Languages: J2EE 4/5, JSE5/6/7, Android</li>
           <li>Technologies: EJB, Hibernate, Selenium</li>
           <li>Databases: Oracle, PostgreSQL</li>
           <li>Other: JBOSS AS 4/5, XML, JSP, Ant, SVN, Jira, Bamboo, Jabber</li>
         </ul>
-      </div>
-    </div>
-  </article>
-</main>
+      </li>
+    </ul>
 
-<section class="pt-4 pb-1">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col col-md-8 text-center">
-        <h1>Where to find me</h1>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="pb-3 pt-1">
-  <div class="container">
-    <div class="row text-center justify-content-center">
-      <div class="col-12 col-md-8 col-lg-7">
-        <p class="text-h2 mt-4">
-          <a
-            class="me-3 text-decoration-none"
-            href="email:{{ site.email }}"
-            aria-label="My email address"
-            target="_blank"
-          >
-            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-          </a>
-          <a
-            class="me-3 text-decoration-none"
-            href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
-            aria-label="My LinkedIn profile"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
-          </a>
-          <a
-            class="me-3 text-decoration-none"
-            href="https://github.com/{{ site.github_username }}"
-            aria-label="My GitHub profile"
-            target="_blank"
-          >
-            <i class="fab fa-github fa-3x" aria-hidden="true"></i>
-          </a>
-        </p>
-      </div>
+  <section class="section">
+    <h2 class="section-title">Where to find me</h2>
+
+    <div class="contact-methods">
+      <a class="link" href="email:{{ site.email }}" aria-label="My email address" target="_blank">
+        <i class="fas fa-envelope fa-3x" aria-hidden="true"></i>
+      </a>
+      
+      <a class="link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="My LinkedIn profile" target="_blank">
+        <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+      </a>
+      
+      <a class="link" href="https://github.com/{{ site.github_username }}" aria-label="My GitHub profile" target="_blank">
+        <i class="fab fa-github fa-3x" aria-hidden="true"></i>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
+
+</div>
