@@ -1,0 +1,157 @@
+@import "animations.css";
+
+:root {
+  --av-accent-color: #0d6efd;
+  
+  --av-banner-text-color: rgb(248, 249, 250);
+  --av-banner-background-color: rgb(0, 102, 191);
+
+  --av-text-color: #212529;
+
+
+
+  --av-background-color: #fff;
+}
+
+
+/* https://www.youtube.com/watch?v=345V2MU3E_w */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--av-background-color);
+  color: var(--av-text-color);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.banner {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-size: cover;
+  background-image: url(/assets/images/header.webp), url(/assets/images/header-lores.jpg);
+  background-color: var(--av-banner-background-color);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title-wrapper {
+  padding: 3rem 0;
+
+  background-image: linear-gradient(
+    to bottom, 
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 102, 191, 0.5) 35% 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.site-title {
+  margin: 0;
+  color: var(--av-banner-text-color);
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.site-description {
+  margin: 0;
+  color: var(--av-banner-text-color);
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.partner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.partner:last-child {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 650px){
+  .partner {
+     flex-direction: column;
+  }
+}
+
+.partner .logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.partner .lead {
+  margin-top: 0;
+}
+
+.partner .description {
+  flex-grow: 1;
+}
+
+li {
+  list-style-type: disc;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+
+  padding-top: 2rem;
+}
+
+.contact-methods .link {
+  color: var(--av-accent-color);
+}
+
+.footer {
+  height: 4rem;
+
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-weight: 400;
+}
