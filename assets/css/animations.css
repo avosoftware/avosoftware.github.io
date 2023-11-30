@@ -1,166 +1,59 @@
-@-webkit-keyframes bounceInDown {
-  0%,60%,75%,90%,to {
-    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-    animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
+@-webkit-keyframes slide-in-down {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0,-3000px,0);
-    transform: translate3d(0,-3000px,0)
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0,25px,0);
-    transform: translate3d(0,25px,0)
-  }
-
-  75% {
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0)
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,5px,0);
-    transform: translate3d(0,5px,0)
+    -webkit-transform: translate3d(0,-90px,0);
+    transform: translate3d(0,-90px,0);
   }
 
   to {
     -webkit-transform: none;
-    transform: none
+    transform: none;
   }
 }
 
-@keyframes bounceInDown {
-  0%,60%,75%,90%,to {
-    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-    animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
+@keyframes slide-in-down {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0,-3000px,0);
-    transform: translate3d(0,-3000px,0)
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0,25px,0);
-    transform: translate3d(0,25px,0)
-  }
-
-  75% {
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0)
-  }
-
-  90% {
-    -webkit-transform: translate3d(0,5px,0);
-    transform: translate3d(0,5px,0)
+    -webkit-transform: translate3d(0,-90px,0);
+    transform: translate3d(0,-90px,0);
   }
 
   to {
     -webkit-transform: none;
-    transform: none
+    transform: none;
   }
 }
 
-.bounceInDown {
-  animation: 2s bounceInDown ease-out;
+.slide-in-down {
+  animation: .6s slide-in-down;
 }
 
-@-webkit-keyframes bounceInRight {
-  0%,60%,75%,90%,to {
-    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-    animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
+@-webkit-keyframes slide-in-left {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(3000px,0,0);
-    transform: translate3d(3000px,0,0)
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px,0,0);
-    transform: translate3d(-25px,0,0)
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px,0,0);
-    transform: translate3d(10px,0,0)
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px,0,0);
-    transform: translate3d(-5px,0,0)
+    -webkit-transform: translate3d(50px,0,0);
+    transform: translate3d(50px,0,0);
   }
 
   to {
     -webkit-transform: none;
-    transform: none
+    transform: none;
   }
 }
 
-@keyframes bounceInRight {
-  0%,60%,75%,90%,to {
-    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-    animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
+@keyframes slide-in-left {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(3000px,0,0);
-    transform: translate3d(3000px,0,0)
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px,0,0);
-    transform: translate3d(-25px,0,0)
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px,0,0);
-    transform: translate3d(10px,0,0)
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px,0,0);
-    transform: translate3d(-5px,0,0)
+    -webkit-transform: translate3d(50px,0,0);
+    transform: translate3d(50px,0,0);
   }
 
   to {
     -webkit-transform: none;
-    transform: none
+    transform: none;
   }
 }
 
-.bounceInRight {
-  animation: 2s bounceInRight ease-out;
-}
-
-/* https://www.youtube.com/watch?v=345V2MU3E_w */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  font-style: italic;
-  background-repeat: no-repeat;
-  background-size: cover;
-  shape-margin: 1rem;
-}
-
-.banner {
-  min-height: 100vh;
-  min-height: 100svh;
-  background-size: cover;
-  background-image: url(/assets/images/header.webp), url(/assets/images/header-lores.jpg);
-  background-color: rgb(0, 102, 191);
-}
-
-.page-title {
-  background-image: linear-gradient(to bottom, rgba(0, 102, 191, 0) 0%, rgba(0, 102, 191, 0.6) 35% 75%, rgba(0, 102, 191, 0) 100%);
+.slide-in-left {
+  animation: .75s slide-in-left;
 }
