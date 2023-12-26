@@ -5,6 +5,11 @@
   background-image: url(/assets/images/header.webp), url(/assets/images/header-lores.jpg);
   background-color: var(--av-banner-background-color);
 
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(80%);
+  }
+
   display: flex;
   justify-content: center;
   flex-direction: column;

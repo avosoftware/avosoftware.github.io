@@ -7,6 +7,14 @@
   --av-banner-text-color: #f8f9fa;
 }
 
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --av-background-color: #222;
+    --av-text-color: #ddd;
+  }
+}
+
 /* https://www.youtube.com/watch?v=345V2MU3E_w */
 img {
   max-width: 100%;
@@ -68,6 +76,12 @@ body {
       .logo {
         grid-area: logo;
         align-self: center;
+
+        @media (prefers-color-scheme: dark) {
+          img {
+            filter: brightness(85%);
+          }
+        }
       }
 
       .lead {
