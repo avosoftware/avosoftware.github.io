@@ -30,12 +30,6 @@ body {
   font-weight: 300;
 }
 
-@media screen and (max-width: 750px) {
-  .wrapper {
-    max-width: 95%;
-  }
-}
-
 .wrapper {
   max-width: 85%;
   margin: 0 auto;
@@ -48,13 +42,6 @@ body {
       font-weight: 500;
       text-align: center;
       margin: 0;
-    }
-
-    @media screen and (max-width: 750px) {
-      .partner {
-        grid-template-areas: "logo" "lead" "skills";
-        grid-template-columns: auto;
-      }
     }
 
     .partner {
@@ -111,6 +98,17 @@ body {
       .link {
         color: var(--av-accent-color);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    max-width: 95%;
+
+    .section .partner {
+      grid-template-areas: "logo" "lead" "skills";
+      grid-template-columns: auto;
     }
   }
 }
