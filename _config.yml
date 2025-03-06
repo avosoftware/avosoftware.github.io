@@ -28,6 +28,8 @@ defaults:
 # plugins:
 #   - jekyll-feed
 
+include: [".well-known"]
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
