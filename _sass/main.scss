@@ -2,7 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 #hero-header {
-    background-image: linear-gradient(rgba(12, 10, 9, 0.2), rgba(12, 10, 9, 0.5)), url('/assets/images/header.webp'), url('/assets/images/header-lores.jpg');
+    background-image: linear-gradient(rgba(12, 10, 9, 0.2), rgba(12, 10, 9, 0.5)), url(/assets/images/header.webp), url(/assets/images/header-lores.jpg);
     background-size: cover;
     background-position: center;
 }
