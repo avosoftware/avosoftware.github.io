@@ -6,6 +6,10 @@ gem "jekyll", "~> 4.3.2"
 #   gem "jekyll-feed", "~> 0.12"
 # end
 
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

@@ -1,6 +1,12 @@
-<header class="banner">
-  <div class="title-wrapper">
-    <h1 class="site-title slide-in-down">{{ site.title }}</h1>
-    <h2 class="site-description slide-in-left">{{ site.description }}</h2>
-  </div>
+<!-- Hero Section -->
+<header id="hero-header" class="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div class="relative text-center z-10 p-4 hero-text">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tight text-glow">{{ site.title }}</h1>
+        <p class="mt-4 text-lg md:text-2xl text-purple-300 font-semibold motto-glow">{{ site.description }}</p>
+    </div>
+      <a href="#projects" class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+      </a>
 </header>
